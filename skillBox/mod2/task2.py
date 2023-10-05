@@ -1,3 +1,7 @@
-a = int(input())
-b = a * 4
-c = a * a
+a = float(input())
+b = round(4 * a, 2)
+c = round(a ** 2, 2)
+d = round((2 * a ** 2) ** 0.5, 2)
+print(" {:.2f}".format(b))
+print(" {:.2f}".format(c))
+print(" {:.2f}".format(d))
