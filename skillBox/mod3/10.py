@@ -1,11 +1,10 @@
-size = int(input())
-matrix = [[i for i in range(1, size + 1)] for j in range(size)]
-for row in matrix:
+s = int(input())
+mat = [[i for i in range(1, s + 1)] for j in range(s)]
+for row in mat:
     print(", ".join(map(str, row)))
-for i in range(size):
-    for j in range(i + 1, size):
-        matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+for i in range(s):
+    for j in range(i + 1, s):
+        mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
 print("\n")
-for row in matrix:
+for row in mat:
     print(", ".join(map(str, row)))
-
